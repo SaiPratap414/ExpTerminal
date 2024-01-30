@@ -19,11 +19,17 @@ body {
   --white: #fff;
 
   /* Gaps */
+  --gap-61xl: 80px;
   --gap-13xl: 32px;
   --gap-5xl: 24px;
   --gap-base: 16px;
 
   /* Paddings */
+  --padding-61xl: 80px;
   --padding-45xl: 64px;
   --padding-5xs: 8px;
+  --padding-base: 16px;
+
+  /* Border radiuses */
+  --br-13xl: 32px;
 }

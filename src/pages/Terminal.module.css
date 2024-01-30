@@ -50,19 +50,26 @@
   position: relative;
   height: 24px;
 }
-.column,
-.column1 {
+.column {
   flex: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
+.link1 {
+  position: relative;
+  line-height: 150%;
+}
 .column1 {
-  border-radius: 32px;
+  border-radius: var(--br-13xl);
   background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.2)), #111;
-  justify-content: center;
-  padding: var(--padding-5xs) 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-base);
   gap: var(--gap-13xl);
 }
 .vectorIcon {
@@ -71,44 +78,33 @@
   height: 32px;
 }
 .vectorParent {
-  flex: 1;
+  border-radius: var(--br-13xl);
   background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.2)), #111;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-end;
-  padding: var(--padding-5xs) 0;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-base);
   gap: var(--gap-base);
 }
 .column2,
-.container,
-.navbar2 {
+.navbar {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .column2 {
   flex: 1;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 0 90px;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.container,
-.navbar2 {
-  justify-content: center;
-}
-.container {
+.navbar {
+  position: absolute;
+  top: 25px;
+  left: 64px;
   width: 1312px;
   flex-direction: row;
+  align-items: center;
   gap: var(--gap-13xl);
-}
-.navbar2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 72px;
-  flex-direction: column;
-  padding: 0 var(--padding-45xl);
-  box-sizing: border-box;
   font-size: var(--font-size-base);
   font-family: var(--font-roboto-mono);
 }
@@ -122,125 +118,32 @@
   flex-shrink: 0;
 }
 .header14,
-.header14Wrapper {
-  align-self: stretch;
+.header14Wrapper,
+.terminal {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .header14 {
+  align-self: stretch;
   background-color: var(--white);
   justify-content: flex-start;
   z-index: 0;
 }
+.header14Wrapper,
+.terminal {
+  justify-content: center;
+}
 .header14Wrapper {
+  align-self: stretch;
   height: 800px;
   overflow: hidden;
   flex-shrink: 0;
-  justify-content: center;
-}
-.links,
-.logo {
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.logo {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-5xl);
-}
-.links {
-  display: none;
-  flex-direction: row;
-  gap: var(--gap-13xl);
-  text-align: left;
-  font-family: var(--font-roboto);
-}
-.vectorIcon1 {
-  width: 36px;
-  position: relative;
-  height: 36px;
-}
-.vectorGroup {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-}
-.content,
-.socialLinks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
-.content {
-  align-self: stretch;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
-}
-.divider {
-  align-self: stretch;
-  position: relative;
-  background-color: var(--white);
-  height: 1px;
-}
-.link12,
-.text {
-  position: relative;
-  line-height: 150%;
-}
-.link12 {
-  text-decoration: underline;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-5xl);
-}
-.credits,
-.footer4,
-.terminal {
-  flex-direction: column;
-  align-items: center;
-}
-.credits {
-  width: 1312px;
-  display: none;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
-  text-align: left;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-roboto);
-}
-.footer4,
-.terminal {
-  display: flex;
-}
-.footer4 {
-  align-self: stretch;
-  overflow: hidden;
-  justify-content: flex-start;
-  padding: 80px var(--padding-45xl);
-  gap: 80px;
-  background-image: url(/public/footer--4@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  text-align: center;
-  font-size: var(--font-size-base);
-  font-family: var(--font-roboto-mono);
 }
 .terminal {
   width: 100%;
   position: relative;
   background-color: var(--white);
-  justify-content: center;
   text-align: left;
   font-size: 72px;
   color: var(--white);
