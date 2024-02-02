@@ -100,4 +100,9 @@
   font-size: var(--font-size-base);
   color: var(--white);
   font-family: var(--font-roboto-mono);
+  background-image: url('/4.png'); /* Replace with the actual path to your image */
+  background-size: cover; /* Adjust based on your preferences */
+  background-position: center; /* Adjust based on your preferences */
+  background-repeat: no-repeat; /* Ensures the image is not repeated */
 }
+
