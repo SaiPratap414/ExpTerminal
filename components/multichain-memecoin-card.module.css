@@ -91,14 +91,11 @@
 }
 .footer4 {
   align-self: stretch;
+  background-color: var(--color-gray);
   overflow: hidden;
   display: flex;
   padding: var(--padding-61xl) var(--padding-45xl);
   gap: var(--gap-61xl);
-  background-image: url(/public/footer--4@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--white);
