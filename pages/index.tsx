@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import MultichainMemecoinCard from "../components/multichain-memecoin-card";
+
 import styles from "./index.module.css";
 
 const Terminal: NextPage = () => {
@@ -45,7 +45,7 @@ const Terminal: NextPage = () => {
           </div>
         </div>
       </div>
-      <MultichainMemecoinCard />
+      
     </div>
   );
 };
